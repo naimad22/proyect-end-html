@@ -69,20 +69,34 @@ main::before {
 /* hero */
 
 .hero {
-  background-color: var(--palet6);
-  background-size: 300px 300px;
   display: flex;
   justify-content: center;
   align-items: center;
   max-width: 1400px;
-  height: 100vh;
   gap: 20px;
+  margin-bottom: 8%;
 }
-
+.hero {
+  position: absolute;
+  transform: translateX(-50%);
+  height: 400px;
+  background-color: rgba(5, 7, 12, 0.75);
+  padding: 70px;
+  border-radius: 40px;
+  opacity: 0.4;
+  z-index: 1;
+}
+.encuadro {
+  display: flex;
+  align-items: center;
+  height: 100vh;
+}
 .hero-info {
+  position: relative;
   display: flex;
   flex-direction: column;
   width: 40%;
+  z-index: 2;
 }
 .video {
   width: 40%;
