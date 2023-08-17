@@ -6,6 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
     <title>adve editor</title>
+    <script
+      src="https://kit.fontawesome.com/09eef09e68.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
     <header>
@@ -13,15 +17,21 @@
         <div class="logo">
           <img src="assets/logo.png" alt="logo de fotografo" />
         </div>
-        <ul class="nav-links">
-          <!-- hero -->
-          <li><a href="#">inicio</a></li>
-          <!-- about -->
-          <li><a href="#">beneficio</a></li>
-          <!-- cardss -->
-          <li><a href="#">servicios</a></li>
-          <li><a href="#">contacto</a></li>
-        </ul>
+        <div class="lista">
+          <label for="toggle-menu"
+            ><i class="fa-solid fa-bars hamburguesa"></i
+          ></label>
+          <input type="checkbox" id="toggle-menu" />
+          <ul class="nav-links">
+            <!-- hero -->
+            <li><a href="#">inicio</a></li>
+            <!-- about -->
+            <li><a href="#">beneficio</a></li>
+            <!-- cardss -->
+            <li><a href="#">nosotros</a></li>
+            <li><a href="#">contacto</a></li>
+          </ul>
+        </div>
       </nav>
     </header>
     <main class="maine">
@@ -54,68 +64,144 @@
             ></iframe>
           </div>
         </section>
+        <!-- about -->
+        <section class="about">
+          <h2>ACERCA DE NOSOTROS</h2>
+          <p>
+            En ADVE FILMs, nos especializamos en la creación de videos
+            cautivadores diseñados para destacar en las redes sociales. Desde
+            Instagram hasta TikTok, transformamos tus ideas en contenido
+            visualmente impactante que capta la atención de la audiencia en
+            segundos. Nuestro equipo creativo combina habilidades técnicas y
+            conocimiento de las tendencias en redes para entregar resultados que
+            superan las expectativas. Únete a nosotros para llevar tus conceptos
+            a nuevos niveles de éxito en el mundo digital.
+          </p>
+        </section>
       </div>
-      <!-- about -->
-      <section class="about">
-        <p>
-          Entendemos la gastronomía desde la máxima exigencia en el producto, la
-          técnica y la creatividad, solo lo que nos parece increíble entra en
-          nuestra carta, no nos conformamos con una receta que este correcta,
-          nosotros buscamos sorprender en cada aroma, textura y composición de
-          nuestros platos, en nuestro restaurante disfrutamos creando, y eso se
-          nota en el resultado final, amamos lo que hacemos, y queremos que
-          nuestros clientes sean participes de esa pasión por la gastronomía,
-          independientemente de su edad, género o gustos.
-        </p>
-      </section>
       <!-- cards -->
       <section class="beneficios">
         <div class="cards-container">
-          <div class="cards">beneficio 1</div>
-          <div class="cards">beneficio 2</div>
-          <div class="cards">beneficio 3</div>
+          <div class="cards">
+            <i class="fa-solid fa-clapperboard" class="icon"></i>
+            <h3>Transformación Creativa de Contenido</h3>
+            <p>
+              Un editor de videos profesional es experto en convertir metraje
+              crudo en una pieza audiovisual cautivadora. Su creatividad y
+              habilidades técnicas permiten transformar tus ideas en videos
+              pulidos y atractivos que capturan la atención de la audiencia.
+            </p>
+            <img class="photo" src="assets/foto1.jpg" alt="" />
+          </div>
+          <div class="cards">
+            <i class="fa-brands fa-confluence" class="icon"></i>
+            <h3>Fluidez y Coherencia en la Edición</h3>
+            <p>
+              Con la ayuda de un editor, tus videos adquieren una coherencia y
+              fluidez que marcan la diferencia. Se encargan de la edición
+              precisa, la corrección de color y el equilibrio de audio, lo que
+              resulta en un contenido visualmente agradable y profesional.
+            </p>
+            <img class="photo" src="assets/foto2.jpg" alt="" />
+          </div>
+          <div class="cards">
+            <i class="fa-solid fa-hourglass-start" class="icon"></i>
+            <h3>Eficiencia y Ahorro de Tiempo</h3>
+            <p>
+              Dejar la edición en manos de un profesional te permite ahorrar
+              tiempo valioso. Un editor con experiencia conoce las herramientas
+              y técnicas adecuadas para agilizar el proceso de edición,
+              permitiéndote centrarte en otras áreas importantes de tu proyecto.
+            </p>
+            <img class="photo" src="assets/foto3.jpg" alt="" />
+          </div>
         </div>
       </section>
+
+      <i class="fa-solid fa-envelope-open-text carta"></i>
       <section class="contacto">
-        <h2>hablemos de tu proyecto!</h2>
-        <p>contactame para la edicion de tus videos</p>
-        <div>
-          <div>
+        <h2 class="subtitulo">hablemos de tu proyecto!</h2>
+        <div class="content-contact">
+          <div class="info info-adve">
             <h3>adve ediciones</h3>
-            <p>buenos aires</p>
-            <p>telefono</p>
-            <p>correo electronico</p>
+            <br />
+            <h4>Argentina, buenos aires</h4>
+            <p><i class="fa-solid fa-location-dot"></i> gregorio laferrere</p>
+            <br />
+            <p><i class="fa-solid fa-phone"></i> +54 01156753456</p>
+            <br />
+            <p><i class="fa-solid fa-envelope"></i> adveindumentaria@gmail</p>
           </div>
-          <div>
-            <h3>puedo ayudarte en algo?</h3>
-            <p>nombre</p>
-            <p>email</p>
-            <p>consulta</p>
-            <p>enviar</p>
+          <div class="divisor"></div>
+          <div class="info">
+            <h3>contactame para la edicion de tus videos</h3>
+            <form method="POST">
+              <label for="nombre">Nombre:</label>
+              <input
+                class="controles"
+                type="text"
+                id="nombre"
+                name="nombre"
+                required
+              />
+
+              <label for="email">Email:</label>
+              <input
+                class="controles"
+                type="email"
+                id="email"
+                name="email"
+                required
+              />
+
+              <label for="mensaje">Mensaje:</label>
+              <textarea
+                class="controles"
+                id="mensaje"
+                name="mensaje"
+                rows="4"
+                required
+              ></textarea>
+              <button class="enviar" type="submit">Enviar</button>
+            </form>
           </div>
         </div>
-        <div>
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3282.5589684176
-            7!2d-58.602031!3d-34.640583899999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13
-            .1!3m3!1m2!1s0x95bc951c0fe2d9f5%3A0x9f1c540898efecbe!2sUTN%20-%20Facultad%20Regio
-            nal%20Haedo!5e0!3m2!1ses-419!2sar!4v1689136250047!5m2!1ses-419!2sar"
-            style="border: 0"
-            allowfullscreen=""
-            loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"
-          ></iframe>
-        </div>
-        <div class="redessociales">
-          <h3>visita nuestras redes sociales</h3>
-          <p>instagram</p>
-          <p>facebook</p>
-          <p>twitter</p>
-          <p>tiktok</p>
+        <div class="redes-ubi">
+          <h3 class="eslogan">
+            es simple <br />
+            es calidad <br />es Eficiencia
+          </h3>
+
+          <div class="redessociales">
+            <p>
+              <i class="fa-brands fa-instagram"></i>
+              <a href="https://www.instagram.com/nucba/"> instagram</a>
+            </p>
+            <p>
+              <i class="fa-brands fa-facebook"></i
+              ><a href="https://www.facebook.com/nucbahub"> facebook</a>
+            </p>
+            <p><i class="fa-brands fa-twitter"></i> twitter</p>
+            <p><i class="fa-brands fa-tiktok"></i> tiktok</p>
+          </div>
+          <div class="mapa">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3282.5589684176
+              7!2d-58.602031!3d-34.640583899999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13
+              .1!3m3!1m2!1s0x95bc951c0fe2d9f5%3A0x9f1c540898efecbe!2sUTN%20-%20Facultad%20Regio
+              nal%20Haedo!5e0!3m2!1ses-419!2sar!4v1689136250047!5m2!1ses-419!2sar"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
         </div>
         <hr />
       </section>
-      <footer>derechos de autor by damian flores for adve</footer>
+      <footer>
+        <p>&copy; 2023 Damián Flores | Adve. Todos los derechos reservados.</p>
+      </footer>
     </main>
   </body>
 </html>

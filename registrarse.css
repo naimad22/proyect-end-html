@@ -15,6 +15,7 @@
   box-sizing: border-box;
 }
 body {
+  font-family: Arial, sans-serif;
   background-image: url(assets/fondo.jpg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -110,161 +111,78 @@ nav {
     display: flex;
   }
 }
-
-/* maain */
-main {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-}
-
-/* hero */
-
-.hero {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  max-width: 1400px;
-  gap: 20px;
-  margin-bottom: 8%;
-}
-.hero {
-  height: 400px;
-  padding: 40px;
-  margin-top: 200px;
-
-  /* degrade en div con bordes difuminados */
-  background: rgb(19, 21, 21);
-  background: radial-gradient(
-    circle,
-    rgba(19, 21, 21, 0.9500175070028011) 6%,
-    rgba(19, 19, 19, 0.896796218487395) 33%,
-    rgba(16, 17, 17, 0.7875525210084033) 55%,
-    rgba(13, 14, 14, 0.4374124649859944) 84%,
-    rgba(0, 0, 0, 0) 100%
-  );
-}
-.encuadro {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-
-  align-items: center;
+/* registrarse */
+.pantallacompleta {
   height: 100vh;
-}
-.hero-info {
-  color: white;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   display: flex;
-  flex-direction: column;
-  width: 50%;
+  align-items: center;
+  justify-content: center;
 }
-.video {
-  width: 40%;
-}
-.hero-info h1 {
-  font-size: 48px;
-  width: 80%;
-  min-width: 500px;
-  font-weight: 800;
-}
-.hero-info p {
-  font-size: 25px;
-  width: 100%;
-  padding-bottom: 20px;
-}
-.botones {
-  display: flex;
-  gap: 50px;
-}
-.hero-info a {
-  background-color: var(--palet1);
-  color: var(--palet5);
-  width: 130px;
-  padding: 6px 20px;
+.register-container {
+  width: 300px;
+  padding: 20px;
+  background-color: #242424de;
   border-radius: 10px;
-  font-size: 20px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+.register-container h2 {
+  text-align: center;
+  color: white;
+  margin-bottom: 20px;
+}
+.register-container label,
+.register-container input {
+  color: wheat;
+  display: block;
+  margin-bottom: 10px;
+  width: 100%;
+}
+.register-container input {
+  color: black;
+  border: 1px solid;
+  border-radius: 3px;
+  padding: 6px;
+  background-color: #c6e0ece9;
+}
+.register-button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  width: 100%;
+  cursor: pointer;
+}
+.register-button:hover {
+  background-color: #2dc3d6;
+}
+.back-link,
+.login-link {
+  display: block;
+  margin-top: 10px;
   text-align: center;
   text-decoration: none;
+  color: #007bff;
+  font-size: 14px;
 }
-
-.about {
-  font-family: kanit;
-  font-style: italic;
-  background-color: rgba(3, 3, 3, 0.793);
-  border-radius: 30px;
-  max-width: 1400px;
-  text-align: center;
-  font-size: 1.5rem;
-  color: white;
-  padding: 20px;
+.back-link:hover,
+.login-link:hover {
+  text-decoration: underline;
 }
-.about h2 {
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  font-size: 2rem;
+.login-link {
+  color: #ededed;
+  transition: color 0.3s ease-in-out, transform 0.3s ease-in-out;
 }
-.beneficios {
-  display: flex;
-  justify-content: center;
+.login-link:hover {
+  color: #0056b3;
+  text-decoration: none;
+  transform: scale(1.2);
 }
-.cards-container {
-  width: 80%;
-  display: flex;
-  gap: 100px;
-  margin-top: 30px;
-}
-.cards {
-  color: white;
-  text-align: center;
-  width: 450px;
-  background-color: #171515c7;
-  padding: 30px;
-  border-radius: 33px;
-  box-shadow: 0px 0px 50px rgba(211, 210, 210, 0.21);
-}
-.cards h3 {
-  font-size: 2rem;
-  font-family: Arial, Helvetica, sans-serif;
-}
-.cards p {
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  padding: 30px 15px 0px 15px;
-  font-size: 1.3rem;
-}
-.cards i {
-  font-size: 50px;
-  padding-bottom: 30px;
-}
-.photo {
-  border-radius: 15px;
-  margin-top: 20px;
-  width: 100%;
-}
-/* contactos */
-.cards i {
-  font-size: 50px;
-  padding-bottom: 30px;
-}
-/* contactos */
-.carta {
-  padding: 150px 150px 100px 150px;
-  font-size: 200px;
-  background: rgb(236, 236, 236);
-  background: radial-gradient(
-    circle,
-    rgba(236, 236, 236, 0.9500175070028011) 0%,
-    rgba(255, 255, 255, 0) 46%
-  );
-}
+/* esto es de la pagina principal */
 .contacto {
   padding-top: 20px;
   padding: 40px;
   width: 100%;
-
   background: #000224d9;
   display: flex;
   justify-content: center;
@@ -272,59 +190,7 @@ main {
   flex-direction: column;
   align-items: center;
 }
-.content-contact,
-.subtitulo {
-  color: rgb(229, 229, 229);
-  font-family: Arial, Helvetica, sans-serif;
-}
-.subtitulo {
-  font-size: 2rem;
-}
-.content-contact {
-  display: flex;
-  justify-content: center;
-}
-/* cuadrado del contacto diseño */
-.info {
-  line-height: 40px;
-  margin-top: 30px;
-  margin-bottom: 30px;
-  padding: 20px;
-  border-radius: 30px;
-  background-color: rgba(0, 0, 0, 0.4290091036414566);
-}
-/* div que use para el diseño de una linea */
-.divisor {
-  margin: 20px;
-  width: 1px;
-  height: 550px;
-  background-color: rgb(242, 242, 242);
-}
-.info-adve {
-  text-align: right;
-}
-
-.controles {
-  color: aliceblue;
-  width: 100%;
-  background: #404654e1;
-  padding: 10px;
-  border-radius: 5px;
-  margin-bottom: 16px;
-  border: 1px solid rgb(10, 2, 82);
-}
-.enviar {
-  width: 100%;
-  background-color: aqua;
-  border: none;
-  padding: 8px;
-  font-size: 16px;
-  margin: 16px 0px;
-  border-radius: 6px;
-}
-.info h3 {
-  margin-bottom: 20px;
-}
+/* redes y ubicacion */
 .redes-ubi {
   color: aliceblue;
   display: flex;

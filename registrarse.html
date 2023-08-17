@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>iniciar sesion</title>
+    <link rel="stylesheet" href="registrarse.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="logo">
+          <img src="assets/logo.png" alt="logo de fotografo" />
+        </div>
+        <div class="lista">
+          <label for="toggle-menu"
+            ><i class="fa-solid fa-bars hamburguesa"></i
+          ></label>
+          <input type="checkbox" id="toggle-menu" />
+          <ul class="nav-links">
+            <!-- hero -->
+            <li><a href="#">inicio</a></li>
+            <!-- about -->
+            <li><a href="#">beneficio</a></li>
+            <!-- cardss -->
+            <li><a href="#">nosotros</a></li>
+            <li><a href="#">contacto</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main class="maine">
+      <!-- inicion de sesion  -->
+      <div class="pantallacompleta">
+        <div class="register-container">
+          <h2>Registrarse</h2>
+          <form action="procesar_registro.php" method="post">
+            <label for="username">Usuario:</label>
+            <input type="text" id="username" name="username" required />
+            <label for="password">Contraseña:</label>
+            <input type="password" id="password" name="password" required />
+            <button type="submit" class="register-button">Registrarse</button>
+          </form>
+          <a href="javascript:history.go(-1)" class="back-link">Volver Atrás</a>
+          <a href="inicio_sesion.html" class="login-link">Iniciar Sesión</a>
+        </div>
+      </div>
+      <!-- resto de la pagina -->
+      <section class="contacto">
+        <div class="redes-ubi">
+          <h3 class="eslogan">
+            es simple <br />
+            es calidad <br />es Eficiencia
+          </h3>
+
+          <div class="redessociales">
+            <p>
+              <i class="fa-brands fa-instagram"></i>
+              <a href="https://www.instagram.com/nucba/"> instagram</a>
+            </p>
+            <p>
+              <i class="fa-brands fa-facebook"></i
+              ><a href="https://www.facebook.com/nucbahub"> facebook</a>
+            </p>
+            <p><i class="fa-brands fa-twitter"></i> twitter</p>
+            <p><i class="fa-brands fa-tiktok"></i> tiktok</p>
+          </div>
+          <div class="mapa">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3282.5589684176
+              7!2d-58.602031!3d-34.640583899999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13
+              .1!3m3!1m2!1s0x95bc951c0fe2d9f5%3A0x9f1c540898efecbe!2sUTN%20-%20Facultad%20Regio
+              nal%20Haedo!5e0!3m2!1ses-419!2sar!4v1689136250047!5m2!1ses-419!2sar"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+        </div>
+        <hr />
+      </section>
+      <footer>
+        <p>&copy; 2023 Damián Flores | Adve. Todos los derechos reservados.</p>
+      </footer>
+    </main>
+  </body>
+</html>
