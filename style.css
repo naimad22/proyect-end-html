@@ -9,6 +9,9 @@
   --palet5: #a6e1fa;
   --palet6: #686868;
 }
+html {
+  scroll-behavior: smooth;
+}
 * {
   padding: 0;
   margin: 0;
@@ -179,15 +182,18 @@ main {
   display: flex;
   gap: 50px;
 }
+
 .hero-info a {
-  background-color: var(--palet1);
-  color: var(--palet5);
+  background-color: rgba(0, 156, 247, 0.933);
+  color: white;
+  font-weight: 400;
   width: 130px;
   padding: 6px 20px;
   border-radius: 10px;
   font-size: 20px;
   text-align: center;
   text-decoration: none;
+  border: 1px solid;
 }
 
 .about {
@@ -377,4 +383,29 @@ footer {
   color: white;
   text-align: center;
   padding: 15px;
+}
+/* adaptibilidad a un dispositivo */
+@media (max-width: 992px) {
+  .hero {
+    display: flex;
+    text-align: center;
+    width: 90%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .encuadro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    align-items: center;
+    height: 100vh;
+  }
+  .video {
+    width: 400px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 60px;
+  }
 }
